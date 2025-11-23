@@ -1,4 +1,4 @@
-Problem Statement
+Problem Statement:
 In the modern digital landscape, news consumers are often faced with an abundance of information that is difficult to navigate and filter effectively. This saturation results in inefficient news consumption, as generic feeds frequently fail to deliver content that is specifically relevant to the user's immediate domain of interest.
 The core problem the Smart News Assistant addresses is the critical gap in personalization and specificity within conventional news delivery systems.
 A robust, interactive system is needed to overcome the limitations of passive aggregation. Currently, users lack an intuitive tool capable of integrating two key filtering dimensions quickly and accurately:
@@ -6,7 +6,7 @@ A robust, interactive system is needed to overcome the limitations of passive ag
 2. Insufficient Language Customization: While global news is available, systems often default to a primary language or require burdensome configuration. There is a clear requirement for an application that prompts the user for which language they prefer, allowing the user to select their desired language (such as English, Hindi, or Marathi, as detailed in our conversation).
 The Smart News Assistant, a solution made in python, is designed to solve this by providing a dedicated, two-step questioning process (domain and language inquiry). This process ensures that the ultimate output of the code is highly targeted and relevant: the news about the entered topic.
 
-Scope of the Project
+Scope of the Project:
 The scope of this project is to create a focused, interactive tool for customized news retrieval.
 Primary Objectives and Functionality
 The main objective of this project is to serve as a smart news assistant made in python. The core scope is defined by the following interactive steps and resulting output:
@@ -15,7 +15,7 @@ The main objective of this project is to serve as a smart news assistant made in
 3. Targeted Output Delivery: The project is successfully completed when the output of the code is the news about the entered topic, presented according to the language selected by the user.
 In summary, the scope is limited to providing a streamlined Python-based interface that captures domain and language preferences from the user and delivers the corresponding filtered news results.
 
-Target Users
+Target Users:
 This Python Smart News Assistant is designed for users who require highly filtered and customizable news retrieval. The key target users include:
 1. Users Seeking Specific Domain Information This project is ideal for individuals (such as researchers, analysts, or enthusiasts) who only want to receive news related to a singular topic.
 • Users can specify the exact domain news they want, ensuring the output focuses only on the entered topic.
@@ -25,7 +25,7 @@ This Python Smart News Assistant is designed for users who require highly filter
 3. Programmers and CLI Enthusiasts Since the tool is a smart news assistant made in python, target users include those who prefer running utilities from a command-line interface or integrating Python scripts into their existing workflows.
 In summary, the target user is anyone who values control over both the subject matter and the language of their news feed.
 
-High-Level Features
+High-Level Features:
 This Smart News Assistant provides users with targeted news results through an interactive and customizable experience.
 1. Python-Based Development: The project is a smart news assistant made in python.
 2. Interactive Query System: The assistant is designed to guide the user by asking questions to determine their preferences.
@@ -34,7 +34,7 @@ This Smart News Assistant provides users with targeted news results through an i
 5. Targeted Output Delivery: The core outcome of the program is the highly relevant news, where the output of the code is the news about the entered topic.
 
    
-Functional Requirements
+Functional Requirements:
 I. User Interaction and Input
 1. System Initialization: The system shall initiate the user interface by displaying a clear welcoming message (e.g., "=== SMART NEWS ASSISTANT ===").
 2. Domain Inquiry: The system must ask questions about which domain news the user wants, prompting the user to "Enter topic you want news about".
@@ -54,7 +54,7 @@ III. Output and Display
 14. No News Handling: If the API returns no articles for the specified topic and language, the system must report that "No news found for this topic"
 
 
-Non-Functional Requirements (NFRs)
+Non-Functional Requirements (NFRs):
 The non-functional requirements (NFRs) describe the criteria that define the quality, performance, and operational environment of the Smart News Assistant, rather than its specific features.
 Here are the non-functional requirements for the Smart News Assistant, drawing upon its described architecture and implementation details:
 
@@ -76,7 +76,7 @@ Here are the non-functional requirements for the Smart News Assistant, drawing u
 • API Security: Access to news data must be secured through the required use of a valid API Key during all external data requests 
 The Smart News Assistant system follows a simple, three-tiered architecture that facilitates interactive user input, data processing, and external API communication. The entire system is made in Python.
 
-System Architecture
+System Architecture:
 1. Presentation and Interaction Layer (User Input)
 This layer handles all direct communication with the user and focuses on gathering the necessary parameters for the news retrieval.
 • Sequential Interaction: The assistant initiates a conversational flow.
@@ -104,10 +104,10 @@ After receiving and processing the data, this layer handles the formatting and d
 The architecture functions like a specialized translator operating within a pipeline: the user speaks their interests (topic and language) to the Python core, which translates that request into the specific format needed by the external news service. The news service sends the raw data back, and the Python core then filters and formats the results before delivering the highly specific news back to the user.
 
 
-Design decision and Rationale
+Design decision and Rationale:
 The design of the Smart News Assistant is centred on creating a highly personalized and efficient news retrieval system. The decisions made regarding architecture, technology, and data handling are directly aimed at fulfilling the system's core requirement: providing the news about the entered topic based on user-specified filters.
 
-Implementation details
+Implementation details:
 The implementation details of the Smart News Assistant cover the specific technology, libraries, functions, and logical steps used to gather user input and fetch news data. The entire project is made in python.
 1. Technology Stack and External Dependencies
 • Programming Language: The Smart News Assistant is implemented entirely in Python.
@@ -131,7 +131,7 @@ B. Data Retrieval (get_news function)
 3. Output Presentation: If articles are available, the output of the code is the news about the entered topic. The function iterates over the list of articles, displaying a maximum of the first five articles found.
 4. Information Display: For each of the displayed articles, the system prints the title and the URL 
 
-Testing Approach
+Testing Approach:
 Based on the documented features, architecture, and implementation details of the Smart News Assistant, the testing approach should be focused on verifying its core functionalities: sequential user interaction, accurate parameter passing, successful API integration, and correct output generation.
 The testing approach would primarily involve Functional Testing and Non-Functional Testing (focusing on reliability and usability).
 I. Functional Testing Approach
@@ -139,7 +139,7 @@ The main goal is to confirm that the assistant, made in Python, correctly implem
 II. Non-Functional Testing Approach (Reliability)
 This focuses on verifying the system's robustness against common failure points, as implemented in the Python code 
 
-CHALLENGES FACED
+Challenges faced:
 1. External Dependency Challenges
 • API Reliability and Access: The assistant relies entirely on the NewsAPI.org service. A significant challenge is ensuring that the external API remains available, fast, and consistent. Any downtime, changes to the API structure, or issues with the required API Key would render the entire assistant non-functional.
 • Rate Limiting: Since the system uses a third-party API, managing the volume of requests to avoid hitting rate limits is a constant challenge, particularly if the assistant is used frequently by multiple users or deployed publicly.
@@ -153,7 +153,7 @@ CHALLENGES FACED
 • Input Validation: Although the system handles invalid language choices by defaulting to English, validating the quality and complexity of the user's topic input remains a challenge to maximize the relevance of the search.
 • User Experience in a Console Environment: Operating in a simple console interface means the system lacks graphical elements, making it challenging to present large amounts of data clearly or offer complex user feedback beyond simple printed statements
 
-Learnings & Key Takeaways
+Learnings & Key Takeaways:
 The development and implementation of the Smart News Assistant yield several important learnings and key technical takeaways, focused on effective personalization and robust external integration.
 I. Core Project Validation and Personalization
 The primary takeaway is the successful validation of the core project concept:
@@ -170,7 +170,7 @@ Developing a system dependent on an external service highlighted the importance 
 • Handling Empty Datasets: A key takeaway was the need to account for search criteria that yield zero results. The mechanism to detect and report "No news found for this topic" ensures that the system remains stable and informative even when the topic or language combination is too specific.
 • Input Reliability: The decision to default the language to "en" when an invalid input is provided is a critical lesson in improving system reliability by building safeguards against unexpected user actions.
 
-Future Enhancements
+Future Enhancements:
 Based on the current implementation and scope of the Smart News Assistant, which is made in Python and focuses on retrieving the news about the entered topic based on domain and language filters, several enhancements can be proposed to increase its functionality, robustness, and personalization.
 Here are future enhancements for the Smart News Assistant:
 1. Expanded Personalization and Filtering
@@ -189,7 +189,7 @@ Here are future enhancements for the Smart News Assistant:
 • Scheduled Reporting: Introduce a mechanism to run the news assistant automatically at predefined intervals and perhaps output the results to a file or a simple notification system, turning it from a reactive tool into a proactive one.
 
 
-References
+References:
 Books & Documentation
 1. Van Rossum, G., & Drake, F. L. (2009). The Python Language Reference Manual. Python Software Foundation.
 2. Lutz, M. (2013). Learning Python (5th ed.). O’Reilly Media.
